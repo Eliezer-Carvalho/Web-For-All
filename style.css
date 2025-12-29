@@ -1,0 +1,21 @@
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.table-contents {
+    height: 1000px;
+    width: 250px;
+    border-right: solid; /* MANEIRA DE CRIAR UMA BORDA COM APENAS UMA LINHA */
+    border-width: 1px; 
+
+}
+
+ .content {
+    height: 40px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
