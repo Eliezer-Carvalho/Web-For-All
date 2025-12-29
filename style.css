@@ -1,21 +1,37 @@
+* {
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+
+
+
 
 .main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
-.table-contents {
-    height: 1000px;
-    width: 250px;
+.table-contents { /* AQUI ESTAMOS A INFORMAR QUE HÁ UM CLASS = table-content  */
+    height: 100vh; /* 100% VIEW PORT */
+    width: 20%;
     border-right: solid; /* MANEIRA DE CRIAR UMA BORDA COM APENAS UMA LINHA */
     border-width: 1px; 
-
+    
 }
 
- .content {
-    height: 40px;
-    width: 50px;
-    background-color: rgb(255, 255, 255);
+
+ .content { 
+    height: 100vh; 
+    width: 79.8%;
+    
 }
+
+ .content h1 { /* DENTRO DA CLASS = CONTENT HÁ UM <H1> */
+    text-align: center;
+}
+
+ .content p {
+    text-indent: 20px;
+    line-height: 100px;
+ }
 
