@@ -17,7 +17,7 @@
 
  .content { 
     height: 100vh; 
-    width: 79.8%;
+    width: 75%;
 }
 
 
@@ -37,16 +37,21 @@
 
 .content hr {
     position: relative;
-    top: 35px;
+    top: 25px;
     height: 5px;
     background-color: rgb(32, 110, 37);
     border-style: none;
 }
 
- .content p {
-    margin: 60px;
+ .content pre {
+    position: relative;
+    display: inline;
+    top: 20px;
+    left: 60px;
     font-weight: 350;
  }
+
+  
 
 
 
