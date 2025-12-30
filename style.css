@@ -2,10 +2,6 @@
     font-family: "Google Sans Flex", sans-serif;
 }
 
-
-
-
-
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -35,3 +31,13 @@
     line-height: 100px;
  }
 
+ .table-contents a {
+    position: relative;
+    top: 150px;
+    text-decoration: none;
+    color: black;
+ }
+
+ .table-contents ul {
+    list-style-type: none; /* USADO PARA REMOVER O PONTO NO INICIO DA LISTA */
+ }
