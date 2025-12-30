@@ -11,7 +11,7 @@
     height: 100vh; /* 100% VIEW PORT */
     width: 20%;
     border-right: solid; /* MANEIRA DE CRIAR UMA BORDA COM APENAS UMA LINHA */
-    border-width: 1px;     
+    border-width: 3px;     
 }
 
 
@@ -35,11 +35,20 @@
 
 }
 
+.content h4 {
+    text-indent: 100px;
+    font-weight: 600;
+    color: rgb(6, 69, 185);
+    font-size: 20px;
+    margin-top: 50px;
+
+}
+
 .content hr {
     position: relative;
     top: 25px;
     height: 5px;
-    background-color: rgb(32, 110, 37);
+    background-color: rgb(6, 69, 185);
     border-style: none;
 }
 
