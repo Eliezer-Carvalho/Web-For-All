@@ -22,8 +22,9 @@
 
  .layout p 
  {
-    text-align: center;
-    position: sticky;
+    margin-left: 41vw;
+    margin-right: 41vw;
+    position: fixed;
     word-spacing: 5cm;
     color: white;
  }
@@ -34,18 +35,18 @@
 
 
  .content { 
-    height: 100vh;
+    height: 1000cm;
     width: 100vw;
 }
 
-.content h1 {
+.main1 h1 {
     margin-left: 12vw;
     margin-top: 10vh;
     font-size: 65px;
-    color: white;
+    color: snow;
 }
 
-.content p {
+.main1 p {
     margin-left: 13vw;
     margin-top: -1em ;
     margin-right: 3vw;
@@ -66,18 +67,41 @@
     margin-top: 5vh;
     font-size: 38px;
     font-weight: 400;
-    color: white
+    color: snow;
 }
 
 .content ul, pre, a {
     list-style-type: none;
-    color: rgb(207, 215, 225);
-    text-decoration-color: rgba(104, 104, 104, 0.438);
+    color: rgb(96, 165, 250);
+    text-decoration-color: rgb(96, 165, 250);
     font-weight: 200;
 }
 
 .content pre {
     margin-left: 11vw;
 }
-  
 
+
+#ww2 {
+    margin-left: 13vw;
+    margin-top: 5vh;
+    font-size: 38px;
+    font-weight: 400;
+    color: snow;
+}
+
+#Enigma {
+    margin-left: 15vw;
+    margin-top: -2vh;
+    font-size: 30px;
+    font-weight: 200;
+    color: snow;
+}
+
+.main2 p {
+    margin-left: 15vw;
+    margin-top: -1em ;
+    margin-right: 3vw;
+    color: rgb(207, 215, 225);
+    font-weight: 200;
+}
