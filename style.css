@@ -16,20 +16,19 @@
                                                           /* LAYOUT */
 .layout 
 { /* AQUI ESTAMOS A INFORMAR QUE HÁ UM CLASS = table-content  */
-    height: 6vh; /* 100% VIEW PORT */
-    width: 100vw;
+    height: 7vh; /* 100% VIEW PORT */
+    width: 98vw;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
 }
 
- .layout p 
- {
-    margin-left: 41vw;
-    margin-right: 41vw;
-    position: fixed;
-    word-spacing: 5cm;
-    color: white;
+ .layout pre {
+    background-color: rgb(0, 0, 0);
+    margin-left: 40%;
+    margin-top: 2.5vh;
+    color: snow;
  }
-
-
 
                                                          /* CONTENT */
 
