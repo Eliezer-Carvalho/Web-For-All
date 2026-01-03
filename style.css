@@ -80,7 +80,6 @@
     margin-left: 11vw;
 }
 
-
 #ww2 {
     margin-left: 13vw;
     margin-top: 5vh;
@@ -103,4 +102,13 @@
     margin-right: 3vw;
     color: rgb(207, 215, 225);
     font-weight: 200;
+    line-height: 26px;
+}
+
+#Bletchley2 {
+    margin-left: 15vw;
+    margin-top: 2vh;
+    font-size: 30px;
+    font-weight: 200;
+    color: snow;
 }
