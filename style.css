@@ -1,5 +1,8 @@
 * {
     font-family: "Google Sans Flex", sans-serif;
+    background-color: rgb(3, 6, 32);
+    color: white;
+    
 }
 
 .main {
@@ -7,17 +10,15 @@
     flex-wrap: wrap;
 }
 
-.table-contents { /* AQUI ESTAMOS A INFORMAR QUE HÁ UM CLASS = table-content  */
-    height: 100vh; /* 100% VIEW PORT */
-    width: 20%;
-    border-right: solid; /* MANEIRA DE CRIAR UMA BORDA COM APENAS UMA LINHA */
-    border-width: 3px;     
+.layout { /* AQUI ESTAMOS A INFORMAR QUE HÁ UM CLASS = table-content  */
+    height: 6vh; /* 100% VIEW PORT */
+    width: 100vw;
 }
 
 
  .content { 
-    height: 100vh; 
-    width: 75%;
+    height: 100vh;
+    width: 78vw;
 }
 
 
@@ -28,7 +29,6 @@
 
 .content h3 {
     text-indent: 40px;
-    position: relative;
     top: 50px;
     font-weight: 700;
     font-size: 30px;
@@ -40,24 +40,20 @@
     font-weight: 600;
     color: rgb(6, 69, 185);
     font-size: 20px;
-    margin-top: 50px;
+    top: 50px;
 
 }
 
 .content hr {
-    position: relative;
     top: 25px;
     height: 5px;
     background-color: rgb(6, 69, 185);
     border-style: none;
 }
 
- .content pre {
-    position: relative;
-    display: inline;
-    top: 20px;
-    left: 60px;
-    font-weight: 350;
+ .content p {
+    margin-left: 3vw;
+    font-weight: 350; 
  }
 
   
@@ -71,15 +67,16 @@
 
 
 
- .table-contents a {
-    position: relative;
-    top: 170px;
-    text-decoration: none;
-    color: black;
-    line-height: 25px;
- }
 
- .table-contents ul {
-    list-style-type: none; /* USADO PARA REMOVER O PONTO NO INICIO DA LISTA */
+
+
+
+
+
+
+ .layout p 
+ {
+    text-align: center;
+    
  }
 
