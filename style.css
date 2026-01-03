@@ -1,7 +1,6 @@
 * {
     font-family: "Google Sans Flex", sans-serif;
     background-color: rgb(3, 6, 32);
-    color: white;
     
 }
 
@@ -26,6 +25,7 @@
     text-align: center;
     position: sticky;
     word-spacing: 5cm;
+    color: white;
  }
 
 
@@ -42,11 +42,42 @@
     margin-left: 12vw;
     margin-top: 10vh;
     font-size: 65px;
+    color: white;
 }
 
 .content p {
-    margin-left: 14vw;
+    margin-left: 13vw;
+    margin-top: -1em ;
     margin-right: 3vw;
+    color: rgb(207, 215, 225);
+    font-weight: 200;
+}
+
+.content hr {
+    margin-left: 13vw;
+    margin-right: 5vw;
+    margin-top: 3vh;
+    border-color: rgba(104, 104, 104, 0.438);
+    
+}
+
+.conteúdo {
+    margin-left: 13vw;
+    margin-top: 5vh;
+    font-size: 38px;
+    font-weight: 400;
+    color: white
+}
+
+.content ul, pre, a {
+    list-style-type: none;
+    color: rgb(207, 215, 225);
+    text-decoration-color: rgba(104, 104, 104, 0.438);
+    font-weight: 200;
+}
+
+.content pre {
+    margin-left: 11vw;
 }
   
 
