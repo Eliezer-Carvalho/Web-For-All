@@ -1,6 +1,7 @@
 * {
     font-family: "Google Sans Flex", sans-serif;
     background-color: rgb(3, 6, 32);
+    scroll-behavior: smooth;
     
 }
 
