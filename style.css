@@ -17,23 +17,29 @@
                                                           /* LAYOUT */
 .layout 
 { /* AQUI ESTAMOS A INFORMAR QUE HÁ UM CLASS = table-content  */
-    height: 7vh; /* 100% VIEW PORT */
-    width: 98vw;
+    height: 3.2vh; /* 100% VIEW PORT */
+    width: 25vw;
     position: fixed;
-    background-color:aliceblue;
+    background-color:white;
     border-radius: 50px;
+    right: 2vw;
 }
 
- .layout img {
-    width: auto;
-    height: 6.6vh;
-    min-width: 5.5vw;
-    min-height: 6.5vh;
-    margin-left: 35vw;
-    margin-top: 1px;
-    background-color: aliceblue;
-    object-fit: cover;
+ .git {
+    background-color: white;
+    scale: 0.59;
+    max-height: 5.1vh;
+    margin-top: -1vh;
+    margin-left: 6vw;
  }
+
+ .link {
+    background-color: white;  
+    height: 3vh;
+    margin-left: 8.5vw;
+    margin-bottom: 0.9vh;     
+ }
+ 
 
   .layout a {
     background-color: aliceblue;
