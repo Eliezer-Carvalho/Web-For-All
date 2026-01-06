@@ -172,3 +172,29 @@
     color: snow;
     
 }
+
+#duv {
+    margin-left: 13vw;
+    margin-top: 5vh;
+    font-size: 38px;
+    font-weight: 400;
+    color: snow;
+}
+
+#dom {
+    margin-left: 15vw;
+    margin-top: 2vh;
+    font-size: 30px;
+    font-weight: 200;
+    color: snow;
+}
+
+
+#hospedagem {
+    margin-left: 15vw;
+    margin-top: 2vh;
+    font-size: 30px;
+    font-weight: 200;
+    color: snow;
+
+}
