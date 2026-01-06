@@ -22,15 +22,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 * {
     font-family: "Google Sans Flex", sans-serif;
     background-color: rgb(3, 6, 32);
@@ -87,7 +78,7 @@
 
 
  .content { 
-    height: 1000cm;
+    height: 715vh;
     width: 100vw;
     overflow-x: hidden;  /*bug aparecia scroll bar*/
 }
@@ -234,5 +225,23 @@
     font-size: 30px;
     font-weight: 200;
     color: snow;
+}
 
+
+footer a {
+    color: rgb(146, 153, 164);
+    text-decoration-color: rgb(146, 153, 164);
+    position: relative;
+    left: 11vw;
+    top: 5vh;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 18vh;
+    text-align: center;
+    font-size: 40px;
 }
