@@ -1,8 +1,40 @@
+
+@keyframes webforall {
+    form { 
+        transform: translateX(0vw);
+    }
+
+    to {
+        transform: translateX(12vw);
+    }
+}
+
+
+@keyframes contact {
+    from {
+        transform: translateX(0vw);
+    }
+
+    to {
+        transform: translateX(82vw);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     font-family: "Google Sans Flex", sans-serif;
     background-color: rgb(3, 6, 32);
     scroll-behavior: smooth;
-    
 }
 
 .main 
@@ -18,11 +50,14 @@
 .layout 
 { /* AQUI ESTAMOS A INFORMAR QUE HÁ UM CLASS = table-content  */
     height: 4.5vh; /* 100% VIEW PORT */
-    width: 15vw;
+    width: 15vw; 
     position: fixed;
     background-color:aliceblue;
     border-radius: 50px;
-    right: 2vw;
+    /*right: 2vw;*/
+    animation: contact 2s 0.1s forwards;
+    
+    
 }
 
  .git {
@@ -54,13 +89,15 @@
  .content { 
     height: 1000cm;
     width: 100vw;
+    overflow-x: hidden;  /*bug aparecia scroll bar*/
 }
 
 .main1 h1 {
-    margin-left: 12vw;
+    /* margin-left: 12vw; */
     margin-top: 10vh;
     font-size: 65px;
     color: snow;
+    animation: webforall 2s 0.1s forwards  ; /* Funciona bem melhor que animation-name etc */
 }
 
 .main1 p {
@@ -131,7 +168,7 @@
     color: snow;
 }
 
-#arpa {
+#ARPANET {
     margin-left: 13vw;
     margin-top: 5vh;
     font-size: 38px;
@@ -139,7 +176,7 @@
     color: snow;
 }
 
-#www {
+#TIM {
     margin-left: 13vw;
     margin-top: 5vh;
     font-size: 38px;
@@ -147,16 +184,7 @@
     color: snow;
 }
 
-#browsers {
-    margin-left: 13vw;
-    margin-top: 5vh;
-    font-size: 38px;
-    font-weight: 400;
-    color: snow;
-    
-}
-
-#websites {
+#NAVEGADORES {
     margin-left: 13vw;
     margin-top: 5vh;
     font-size: 38px;
@@ -165,7 +193,16 @@
     
 }
 
-#htmlcss {
+#WEB {
+    margin-left: 13vw;
+    margin-top: 5vh;
+    font-size: 38px;
+    font-weight: 400;
+    color: snow;
+    
+}
+
+#Tec {
     margin-left: 13vw;
     margin-top: 5vh;
     font-size: 38px;
