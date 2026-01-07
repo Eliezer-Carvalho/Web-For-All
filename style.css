@@ -1,6 +1,13 @@
+/*CSS (Cascade Style Sheet) é usado para estilizar documentos HTML.
+Este código vai ser comentando para servir como apoio e como guia para quem queira aprender CSS.
+As declarações neste código CSS não vão ser todas explicadas pois muitas delas são auto-esclarecedoras e eu sou apologista de que CSS aprende-se
+pesquisando pela Web fora consoante aquilo que queremos fazer. */ 
 
-@keyframes webforall {
-    form { 
+
+                                                                        /* ANIMAÇÕES */
+
+@keyframes webforall { /* @keyframes é usado para definir animações */
+    from { 
         transform: translateX(0vw);
     }
 
@@ -8,7 +15,6 @@
         transform: translateX(12vw);
     }
 }
-
 
 @keyframes contact {
     from {
@@ -21,13 +27,13 @@
 }
 
 
-
 * {
     font-family: "Google Sans Flex", sans-serif;
     background-color: rgb(3, 6, 32);
     scroll-behavior: smooth;
 }
 
+                                                /* Definição da Flexbox com display:flex (!important) */ 
 .main 
 {
     display: flex;
@@ -35,11 +41,9 @@
 }
 
 
-
-
-                                                          /* LAYOUT */
+                                                                    /* LAYOUT */
 .layout 
-{ /* AQUI ESTAMOS A INFORMAR QUE HÁ UM CLASS = table-content  */
+{
     height: 4.5vh; /* 100% VIEW PORT */
     width: 15vw; 
     position: fixed;
@@ -47,8 +51,6 @@
     border-radius: 50px;
     /*right: 2vw;*/
     animation: contact 2s 0.1s forwards;
-    
-    
 }
 
  .git {
@@ -67,14 +69,15 @@
     scale: 1.4;
  }
  
-
   .layout a {
     background-color: aliceblue;
     font-size: 0;
     text-decoration: none;
  }
 
-                                                         /* CONTENT */
+
+
+                                                                    /* CONTENT */
 
 
  .content { 
@@ -181,7 +184,6 @@
     font-size: 38px;
     font-weight: 400;
     color: snow;
-    
 }
 
 #WEB {
@@ -190,7 +192,6 @@
     font-size: 38px;
     font-weight: 400;
     color: snow;
-    
 }
 
 #Tec {
@@ -199,7 +200,6 @@
     font-size: 38px;
     font-weight: 400;
     color: snow;
-    
 }
 
 #duv {
@@ -227,6 +227,7 @@
     color: snow;
 }
 
+                                                            /* footer do fim da página */ 
 
 footer a {
     color: rgb(146, 153, 164);
@@ -243,22 +244,34 @@ footer a {
 .copyright {
     margin-top: 18vh;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 
-@media screen and (max-width: 576px) {
+/* Tal como foi explicado no projeto, a responsividade do site é muito importante portanto em todos os documentos CSS é necessário adicionar algum código
+para lidar com vários tipos de ecrãs dos dispositivos móveis.
+Por norma só se usa a LARGURA (WIDTH) pois num dispositivo móvel a largura é que é diferente e a altura é sempre infinita (scroll) */
+
+                                                                    /* TELEMÓVEIS */
+@media screen and (max-width: 576px) { /* @media é a propriedade usada para aplicar CSS consoante a largura do dispositivo */ 
 
     .layout {
      /* 100% VIEW PORT */ 
-    width: 128px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
+    height: 30px;
+    width: 115px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
     left: -80px;
     }
 
     .git {
         margin-left: 23px;
+        max-height: 35px;
+        margin-bottom: 10px;
     }
 
+    .link {
+        max-height: 20px;
+        margin-bottom: 17px;
+    }
 
     .main1 h1 {
         font-size: 30px;
@@ -314,19 +327,25 @@ footer a {
     }
 }
 
-
+                                                                    /* TABLET'S */
 @media screen and (min-width: 577px) and (max-width: 800px) {
 
 .layout {
      /* 100% VIEW PORT */ 
-    width: 128px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
+    height: 30px;
+    width: 115px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
     left: -80px;
     }
 
     .git {
         margin-left: 23px;
+        max-height: 35px;
     }
-
+    
+    .link {
+        max-height: 20px;
+        margin-bottom: 7px;
+    }
 
     .main1 h1 {
         font-size: 30px;
@@ -381,11 +400,12 @@ footer a {
     }
 }
 
-
-@media screen and (min-width: 801px) {
+                                                            /* TABLETS COM DISPLAY DE COMPUTADOR */ 
+@media screen and (min-width: 801px) and (max-width: 954px) {
     .layout {
-     /* 100% VIEW PORT */ 
-    width: 128px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
+     /* 100% VIEW PORT */
+    height: 30px; 
+    width: 115px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
     left: -80px;
     }
 

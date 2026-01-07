@@ -1,60 +1,54 @@
-<!DOCTYPE html>
-<html lang = "pt">
+<!-- HTML é uma linguagem que funciona a partir de tags.
+ Este código vai ser comentando para servir como apoio e como guia para quem queira aprender HTML -->
 
-<head>
 
-    <meta charset = "UTF-8">
+<!DOCTYPE html> <!-- Estrutura básica de um documento -->
+<html lang = "pt"> <!-- Língua dominante do documento-->
+
+
+<head> <!-- tag <head> sempre obrigatória em documentos HTML -->
+
+    <meta charset = "UTF-8"> <!-- Tipo de grupo de caracteres, podem ser escolhidas outras opções como UTF-16, UTF-32 -->
 
     <link href = "https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel = "stylesheet"> <!-- FONTE DE LETRA -->
     <link rel = "stylesheet" href = "style.css"> <!-- CONEXÃO AO CÓDIGO CSS -->
     <link rel = "shortcut icon" href = "Favicon/ms-icon-310x310.png"> <!-- DEFINIÇÃO DO FAVICON -->
 
-    <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
-    <title> Web For All </title> <!-- PRIMEIRA COISA - TÍTULO PARA A PÁGINA-->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> <!-- Definição genérica do HTML que ajuda na responsividade-->
+    <title> Web For All </title> <!-- DAS PRIMEIRAS COISAS - TÍTULO PARA A PÁGINA -->
+
+</head> <!-- Fim da tag <head> -->
 
 
 
 
-</head>
+<body> <!-- Tag também muito importante em HTML, é onde escrevemos 90% do código -->
 
 
-<body>
+<div class = "main"> <!-- Tag Não Semântica em HTML que significa "divisão", neste caso foi usada para criar uma Flexbox -->
 
+<!----------------------------------- Primeira divisão que corresponde à divisão branca com links para Github e Linkedin ---------------------------->
 
-<div class = "main">
+    <div class = "layout">
 
-
-    <div class = "layout"> 
-
-
-        <a href = "https://github.com/Eliezer-Carvalho/Web-For-All" target = "_blank"> 
-            <img class = "git" src = "/Logos/icons8-github-48.png">
+        <a href = "https://github.com/Eliezer-Carvalho/Web-For-All" target = "_blank"> <!-- Definição de um link, é usada a tag <a> para definir links -->
+            <img class = "git" src = "/Logos/icons8-github-48.png"> <!-- Implementação de uma imagem (A imagem tem que estar na mesma pasta!)-->
         </a>
         
-        <a href = "https://www.linkedin.com/in/eliezer-carvalho-332803225/" target = "_blank">
-            <img class = "link" src = "Logos/icons8-linkedin-48.png">
+        <a href = "https://www.linkedin.com/in/eliezer-carvalho-332803225/" target = "_blank"> <!-- Definição de um link, é usada a tag <a> para definir links -->
+            <img class = "link" src = "Logos/icons8-linkedin-48.png"> <!-- Implementação de uma imagem (A imagem tem que estar na mesma pasta!)-->
         </a>
-
 
     </div>
     
-    
-       
-   
-    
-
-
-    
-
-
-
-    
-
+<!--------------------------------------------------- Segunda e última divisão que corresponde ao conteúdo todo na página ---------------------------->
 
     <div class = "content">
         
-        <main class = "main1"> 
-            <h1> Web For All </h1>
+        <main class = "main1"> <!-- Uso de uma tag semântica para melhor organização do código -->
+
+            <h1> Web For All </h1> <!-- Título principal -->
+            <!------------------------------------------------------- Abstracto ----------------------------------->
             <p> Desde a sua criação num período de forte instabilidade geopolítica, a <b>Internet</b> sofreu um 
                 desenvolvimento profundo, afirmando-se como um elemento indispensável da vida contemporânea. 
             <p> Concebida inicialmente para fins militares e académicos acabou por se estender para além desses limites, 
@@ -66,17 +60,25 @@
                 maneira translúcida e profunda pela evolução da Internet e explorar a forma como esta se tornou uma tecnologia fácil 
                 e omnipresente. Ademais, visa funcionar como um guia introdutório para interessados no tema e estudantes que desejam compreender 
                 melhor os princípios da Web e as suas tecnologias fundamentais, nomeadamente HTML e CSS. </p>
-            <hr>
+            <hr> <!-- linha horizontal -->
+
         </main>
 
+            <!------------------------------------------------------- Tabela de Conteúdos ------------------------->
 
+        <section> <!-- Uso de uma Tag Semântica para melhor coordenação do códigp -->
 
-        <section>
-            <h2 class = "conteúdo"> Conteúdos </h2>
-            <ul>
-                <li> <a href = "#ww2"> <pre> 1. WWII </pre> </a> </li>
-                    <ul> 
-                        <li> <a href = "#Enigma"> <pre>1.1 Enigma </pre> </a> </li> 
+            <h2 class = "conteúdo"> Conteúdos </h2> <!-- definição de título -->
+
+            <ul> <!-- Tag de Lista, neste caso uma Unorded Lista (Lista sem Ordem)-->
+                <li> <a href = "#ww2"> <pre> 1. WWII </pre> </a> </li> 
+<!-- <li> é uma sub tag usada nas Listas sem Ordem para escrevemos os valores das listas, significa List Item!
+    Neste caso em específico também foi criada um link dentro da lista que vamos usar para criar uma LINK ÂNCORA (MUITO IMPORTANTE)
+    Os links âncora são usados como links dentro da própria página, ou seja, se eu clicar nesse link vou ser direcionado para essa secção da página.
+    Usamos '#' para definir um link âncora -->
+                    
+                    <ul> <!-- Lista dentro de uma lista, para subtemas, totalmente possível em todos os tipos de listas --> 
+                        <li> <a href = "#Enigma"> <pre>1.1 Enigma </pre> </a> </li> <!-- Aqui foi usado o <pre> para evitar o uso tardio de CSS mas não é o melhor exemplo porque é dificil controlar -->
                         <li> <a href = "#Bletchley"> <pre>1.2 Bletchley Park </pre> </a> </li>
                     </ul>
 
@@ -92,12 +94,16 @@
                     </ul>
             </ul>
             <hr>
+
         </section>
 
 
-        <main class = "main2">
-            <h2 id = "ww2"> WWII </h2>
-            <h3 id = "Enigma"> Enigma </h3> 
+            <!------------------------------------------------------- Primeiro Tema ------------------------->
+        
+        <main class = "main2"> <!-- Uso de <main> de novo -->
+
+            <h2 id = "ww2"> WWII </h2> <!-- <h2> é diferente de <h1> em termos de tamanho -->
+            <h3 id = "Enigma"> Enigma </h3> <!-- <h3> mais pequeno que <h2> -->
             <p> Concebido no final da Primeira Guerra Mundial, o <b> Enigma </b> era um <b>engenho de cifragem</b> utilizado para proteger comunicações 
                 comerciais, diplomáticas e militares, um número reduzido de modelos terão sido produzidos para uso civil mas foram desenvolvidas versões mais 
                 avançadas e aprimoradas para a <i>Wehrmacht</i>. </p>
@@ -113,10 +119,10 @@
             
                 <hr>
 
-<!----------------------------------------------------------------------------------------------------------------------------->
-            <h3 id = "Bletchley"> Bletchley Park </h3>
+
+            <!------------------------------------------------------- Segundo Tema ------------------------->
             
-            
+            <h3 id = "Bletchley"> Bletchley Park </h3> <!-- AQUI É ONDE LINKAMOS OS LINK ÂNCORA USANDO 'ID' OBRIGATORIAMENTE, se repararem os nomes dos links em cima são iguais a estes id's (ÚLTIMO PASSO PARA USO DE LINK ÂNCORA)-->
             <p> <b>Bletchley Park</b> é uma casa de campo inglesa localizada em Bletchley que se tornou o coração da descodificação de código durante 
                 a Segunda Guerra Mundial. Ao longo da preparação para a guerra, o governo britânico não tinha em posse fundos suficientes para adquirir a 
                 propriedade. Por esse motivo, Hugh Sinclair, chefe do <i>Secret Intelligence Service</i> (SIS, mais conhecido como MI6), comprou Bletchley Park
@@ -125,7 +131,7 @@
                 onde passava a <i>Varsity Line</i>, que unia Oxford a Cambridge, universidades, que viriam a fornecer muitos dos decifradores de 
                 código.
             </p>
-            <br>
+            <br> <!-- <br> significa break e é usado para quebrar linha -->
             <p> Cinco semanas antes do princípio da Campanha de Setembro, os Polacos partilharam os seus progressos na decifração da máquina Enigma com os 
                 Franceses e os Britânicos. Os criptógrafos Polacos, já tinham atingido o feito de decifrar o código Enigma no inicio dos anos 30 e, 
                 em 1939, face ao agravamento das tensões internacionais decidiram partilhar o seu progresso com os Aliados. </p>
@@ -143,9 +149,9 @@
                 tenha encurtado a guerra em cerca de dois anos, salvando aproximadamente 14 milhões de vidas. </b> </p>
             <hr>
 
+            <!------------------------------------------------------- Terceiro Tema ------------------------->
 
             <h2 id = "ARPANET"> Rede Intergaláctica de Computadores e a ARPANET </h2>
-
             <p> Inaugurei esta landing page singrando pelos alicerces da Segunda Guerra Mundial e a forma como a mesma esteve no nascimento da 
                 <b>Computação Moderna</b>. Reato agora o tema das guerras para destacar outra que veio logo depois da Segunda Grande Guerra: a <b>Guerra Fria</b>. <br> 
                 Estados Unidos da América e a União Soviética entediam a importância crucial dos meios de comunicação, e perante o cenário geopolítico 
@@ -182,8 +188,9 @@
                 <br> <b style = "font-size: 20px; color: rgb(186, 192, 5)"> A Universidade de Lisboa foi a primeira entidade em Portugal a ter uma ligação à Internet</b>. </p>
                 <hr>
             
+            <!------------------------------------------------------- Quarto Tema ------------------------->
+
             <h2 id = "TIM"> Tim Berners-Lee e a World Wide Web </h2>
-        
             <p> Em 1989, no <b>CERN (Organização Europeia para a Investigação Nuclear)</b>, <b>Tim Berners-Lee</b> apresentou uma proposta  
                 que retratava um sistema elaborado para organizar e partilhar dados entre investigadores. Para desenvolver este projeto, 
                 utilizou um computador <i>NeXTcube</i>, que funcionou simultaneamente como o primeiro servidor web e como plataforma para a criação do 
@@ -201,10 +208,10 @@
                 <b style = "font-size: 20px; color: rgb(186, 192, 5)">Em 2025, cerca de 6 biliões de pessoas no mundo conectaram-se à Internet, ou seja, aproximadamente 75 % da população global</b>.</p>
            
             <hr>
+
+            <!------------------------------------------------------- Quinto Tema ------------------------->
             
             <h2 id = "NAVEGADORES"> Navegadores da Internet </h2>
-
-
             <p> Com a explosão da Internet, o conhecimento gerado pelos seus <i>users</i> passou a estar disponível em novas formas de criação, 
                 partilha e apresentação, como tal, o volume e a diversidade da informação disponível aumentaram de forma significativa. 
                 Os <b> Navegadores Web</b> são a principal ferramenta para aceder e visualizar a informação disponível na Internet.</p> <br>
@@ -223,13 +230,11 @@
                 mais popular da época. A <b>Microsoft</b>, que até então, não tinha demonstrado interesse pela Internet, entrou na disputa com o conhecidíssimo <b>Internet Explorer</b>, 
                 um navegador que marcou a geração dos anos 2000. <br>
                 <b>Este momento assinala o início da Guerra dos Navegadores</b>.</p>
-            
-            
                 <hr>
+            
+            <!------------------------------------------------------- Quinto Tema ------------------------->
 
             <h2 id = "WEB"> Websites - Estáticos e Dinâmicos </h2>
-
-
             <p> Nos dias que correm, quase toda a gente sabe o que é um Website e o que representa, mas é importante aprofundar o seu significado e 
                 funcionamento. <br>De um modo geral, os websites podem ser classificados em dois grandes grupos: <b style = "font-size: 20px; color: rgb(186, 192, 5); ">estáticos e dinâmicos</b>. </p>
             <br>
@@ -243,7 +248,6 @@
                 atualizam constantemente. <br> <br>
                 <b style = "font-size: 20px; color: rgb(186, 192, 5)">Uma analogia simples é pensar no front end como a carroçaria e o design de um carro, enquanto o back end 
                 corresponde ao motor e às rodas.</b></p> <br>
-            
             <p> Com a utilização cada vez mais extensiva de dispositivos móveis, a <b>responsividade</b> tornou-se um tema crítico no Desenvolvimento Web. <br>
                 Atualmente, mais de 55% do tráfego global na internet ocorre em dispositivos móveis, tornando essencial que os 
                 websites se adaptem a qualquer tamanho de ecrã ou tipo de dispositivo. <br> É aqui que entra o design web responsivo, uma abordagem
@@ -254,35 +258,31 @@
                 <br> <br> <b style = "font-size: 20px; color: rgb(186, 192, 5)">Confirma-se, a antiga ideia de que a Web é 100% orientada para desktop, está totalmente morta</b>.</p>
             <hr>
 
+            <!------------------------------------------------------- Sexto Tema ------------------------->
+
             <h2 id = "Tec"> HTML, CSS.. e Javascript ?</h2>
-            
             <p> <b>HTML (HyperText Markup Language)</b> foi criado por Tim Berners-Lee e é a base da Web.<br> 
                 Todos os documentos HTML usam marcadores, palavras entre sinais angulares (< >) que funcionam como comandos de formatação. <br>
                 HTML é considerado o esqueleto de uma página web, permitindo que desenvolvedores estruturem conteúdo de forma organizada. <br>
                 Há quem defenda, dentro da comunidade do Desenvolvimento Web, que a Web 
                 deve permanecer simples e direta, podendo existir apenas com HTML, como mostrado no <a href = "https://motherfuckingwebsite.com/" target = "_blank">Motherfucking Website</a>. <br> <br>
-
                 <b>CSS (Cascading Style Sheets)</b> foi criado também no CERN (que surpresa), foi proposto em 1994 pelo norueguês Håkon Wium Lie. <br>
                 CSS permite estilizar o HTML, dando cores, fontes, espaçamentos, layouts e animações às páginas, usando uma sintaxe relativamente simples, 
                 utilizando palavras-chave em inglês para especificar propriedades de estilo. <br>
                 Alguns na comunidade defendem que CSS é tão essencial quanto HTML para criar uma experiência completa na Web <a href = "http://bettermotherfuckingwebsite.com/" target = "_blank">(Better Motherfucking Website)</a>.</p>
                 <br>
-
-                <p>Deixei <b>Javascript</b> na dúvida apesar de para maior parte dos membros da comunidade, JavaScript ser a terceira linguagem que complementa a Web. 
+            <p>Deixei <b>Javascript</b> na dúvida apesar de para maior parte dos membros da comunidade, JavaScript ser a terceira linguagem que complementa a Web. 
                     Originalmente orientada para a Web, ganhou nova dimensão em <b>2009 com a criação do Node.js por Ryan Dahl</b>, permitindo que o 
                     JavaScript fosse executado fora do navegador, tornando-se uma linguagem de programação completa. <br>
                 HTML e CSS não são linguagens de programação completas, HTML é uma linguagem markup e CSS é uma linguagem de estilo.</p>
-                <p> <br> <b style = "font-size: 20px; color: rgb(186, 192, 5)"> Hoje, Javascript juntamente com Python, é considerada uma das linguagens 
+            <p> <br> <b style = "font-size: 20px; color: rgb(186, 192, 5)"> Hoje, Javascript juntamente com Python, é considerada uma das linguagens 
                     mais versáteis e com maior propósito no mundo da programação</b>.</p>
-            
+            <hr>
 
-                <hr>
-
+            <!------------------------------------------------------- Sétimo Tema ------------------------->
                 
             <h2 id = "duv"> Antes de Perguntar ao Google </h2>
-
             <h3 id = "dom"> Document Object Model </h3>
-
             <p> O <b>Document Object Model ou DOM</b>  é uma interface de programação <b>(API)</b> que proporciona a manipulação de documentos HTML. <br> 
                 Estruturado de 
                 forma hierárquica, representa a forma como o navegador interpreta e organiza o HTML, convertendo cada elemento da página num 
@@ -296,11 +296,9 @@
                 responsivos e se adaptem a diferentes dispositivos. <br> Esta ferramenta permite simular o ecrã de diferentes equipamentos móveis e 
                 proporcionar uma visualização precisa de como o website se "veste" em diversos dispositivos, o que é crucial para garantir 
                 que os profissionais não percam a cabeça. </p>
-
-
                 <hr>
-            <h3 id = "hospedagem"> Hospedagem da Web e Domínios  </h3>
 
+            <h3 id = "hospedagem"> Hospedagem da Web e Domínios  </h3>
             <p> Aprender a criar websites é, sem dúvida alguma, muito divertido, porém, todos os desenvolvedores em algum momento 
                 fazem a mesma pergunta: <b> "Como coloco o meu site na Internet?"</b> <br> <br>
                 Para responder a isto, é importante falar sobre <b>domínios</b>. 
@@ -317,7 +315,7 @@
                 <b style = "font-size: 20px; color: rgb(186, 192, 5);"> As plataformas mais conhecidas para adquirir domínios são GoDaddy, Namecheap e Cloudflare Domains</b>. <br> <br>
                 Pronto, então para hospedar um site tenho que obrigatoriamente gastar dinheiro ? Vou responder a essa pergunta no próximo tópico. <br> <br> <br>
                 
-                <p> A <b>Hospedagem Web</b> é o serviço que armazena os arquivos de um web site como, imagens, vídeos e bases de dados, num servidor conectado à 
+            <p> A <b>Hospedagem Web</b> é o serviço que armazena os arquivos de um web site como, imagens, vídeos e bases de dados, num servidor conectado à 
                     Internet 24/7, permitindo que qualquer pessoa possa aceder ao site a qualquer momento. <br> Assim como existem diferentes tipos de sites, 
                     existem também dois principais tipos de hospedagem web: <b style = "font-size: 20px; color: rgb(186, 192, 5)"> Hospedagem Web Dinâmica e Hospedagem Web Estática</b>. <br> <br> 
                     A <b style = "font-size: 20px; color: rgb(186, 192, 5)">Hospedagem Web Dinâmica </b>
@@ -326,19 +324,22 @@
                     de hospedagem é geralmente paga, uma vez que depende de uma CPU para executar código, tem de ter a capacidade de gerir bases de dados, garantir segurança e manter 
                     o site online 24/7. <br> Quem opta por este tipo de hospedagem normalmente também adquire um domínio próprio. <br> <b style = "font-size: 20px; color: rgb(186, 192, 5)"> As principais plataformas 
                     de Hospedagem Web Dinâmica incluem Hostinger, SiteGround e IONOS</b>. </p>
-                
-                <p> <br> A <b style = "font-size: 20px; color:rgb(186, 192, 5)"> Hospedagem Web Estática</b>, de outro modo, é 100% gratuita! <br> 
+            <p> <br> A <b style = "font-size: 20px; color:rgb(186, 192, 5)"> Hospedagem Web Estática</b>, de outro modo, é 100% gratuita! <br> 
                     Nesta abordagem, os arquivos do site são fixos, ou seja, o conteúdo 
                     programado permanece sempre o mesmo para todos os utilizadores, não há necessidade de base de dados nem de processamento contínuo pelo
                     servidor. O servidor apenas "entrega" o código armazenado, sem gerar conteúdo em tempo real. <br> Aqui surge a resposta à pergunta: <b style = "font-size: 20px; color: rgb(186, 192, 5)"> 
                     "É sempre necessário gastar dinheiro para hospedar um site?" Não</b>! <br> Na Hospedagem Web Estática, o domínio é opcional, e muitas plataformas 
                     fornecem um domínio próprio associado à plataforma, como acontece com esta <i>landing page</i>. <br> <b style = "font-size: 20px; color: rgb(186, 192, 5)">As principais plataformas de Hospedagem Web 
                     Estática incluem GitHub Pages, Netlify, Vercel e Cloudflare Pages</b>. </p> 
-                <hr>
+            <hr>
 
-            </main>
 
-        <footer>
+        </main>
+
+
+
+        <footer> <!-- <footer> outra tag semântica que é usada para fins de páginas -->
+
             <ul> 
                 <li> <a href = "https://www.bletchleypark.org.uk/"> https://www.bletchleypark.org.uk/ </a> </li>
                 <li> <a href = "https://www.wikipedia.org/"> https://www.wikipedia.org/ </a> </li>
@@ -346,22 +347,17 @@
                 <li> <a href = "https://www.youtube.com/watch?v=47NRaBVxgVM&t=25637s"> https://www.youtube.com/watch?v=47NRaBVxgVM&t=25637s </a> </li>
                 <li> <a href = "https://developer.chrome.com/docs/devtools/dom?hl=pt-br#main-content"> https://developer.chrome.com/docs/devtools/dom?hl=pt-br#main-content </a> </li>
                 <li> <a href = "https://home.cern/"> https://home.cern/ </a> </li>
-               
             </ul>
 
-            
         </footer>
+
 
         <footer class = "copyright" style = "color: snow">
             <p> &copy; Eliezer Carvalho | All Rights Reserved | January 2026</p>
         </footer>
 
 
-
-<!-- CÓDIGO MÓVEL || ORGANIZAR CÓDIGO || DOCS || GITHUB -->
-
     </div>
 
 </body>
-
 </html>
