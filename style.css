@@ -78,9 +78,9 @@
 
 
  .content { 
-    height: 715vh;
-    width: 100vw;
-    overflow-x: hidden;  /*bug aparecia scroll bar*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;  /*bug aparecia scroll bar*/
 }
 
 .main1 h1 {
@@ -244,4 +244,207 @@ footer a {
     margin-top: 18vh;
     text-align: center;
     font-size: 40px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .layout {
+     /* 100% VIEW PORT */ 
+    width: 128px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
+    left: -80px;
+    }
+
+    .git {
+        margin-left: 23px;
+    }
+
+
+    .main1 h1 {
+        font-size: 30px;
+        margin-top: 7vh;
+        font-weight: 200;
+    }
+
+    .main1 p {
+        font-size: 11px;
+        font-weight: 150;
+        line-height: 20px;
+    }
+
+    .conteúdo {
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    .content ul, pre, a {
+        font-weight: 200;
+        font-size: 11px;
+    }
+
+    .content pre {
+        text-indent: -15px; /* GOAT STUFF */
+        white-space: pre-wrap; /* GOAT STUFF */
+    }
+    
+    #ww2, #ARPANET, #TIM, #NAVEGADORES, #WEB, #Tec, #duv {
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    #Enigma, #Bletchley, #dom, #hospedagem {
+        font-size: 20px;
+        margin-top: 1vh;
+        font-weight: 100;
+    }
+
+    .main2 p {
+        font-size: 11px;
+        font-weight: 150;
+        line-height: 20px;
+    }
+
+    footer a {
+        margin-left: -25px;
+        font-size: 11px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 800px) {
+
+.layout {
+     /* 100% VIEW PORT */ 
+    width: 128px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
+    left: -80px;
+    }
+
+    .git {
+        margin-left: 23px;
+    }
+
+
+    .main1 h1 {
+        font-size: 30px;
+        margin-top: 7vh;
+        font-weight: 200;
+    }
+
+    .main1 p {
+        font-size: 11px;
+        font-weight: 150;
+        line-height: 20px;
+    }
+
+    .conteúdo {
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    .content ul, pre, a {
+        font-weight: 200;
+        font-size: 11px;
+    }
+    .content pre {
+        text-indent: -15px;
+        white-space: pre-wrap;
+    }
+    
+    #ww2, #ARPANET, #TIM, #NAVEGADORES, #WEB, #Tec, #duv {
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    #Enigma, #Bletchley, #dom, #hospedagem {
+        font-size: 20px;
+        margin-top: 1vh;
+        font-weight: 100;
+    }
+
+    .main2 p {
+        font-size: 11px;
+        font-weight: 150;
+        line-height: 20px;
+    }
+
+    footer a {
+        margin-left: -25px;
+        font-size: 11px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (min-width: 801px) {
+    .layout {
+     /* 100% VIEW PORT */ 
+    width: 128px; /* PÍXEIS É MELHOR POIS POR SER UMA UNIDADE FIXA NÃO ALTERA O TAMANHO DA IMAGEM */
+    left: -80px;
+    }
+
+    .git {
+        margin-left: 23px;
+    }
+
+
+    .main1 h1 {
+        font-size: 30px;
+        margin-top: 7vh;
+        font-weight: 200;
+    }
+
+    .main1 p {
+        font-size: 11px;
+        font-weight: 150;
+        line-height: 20px;
+    }
+
+    .conteúdo {
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    .content ul, pre, a {
+        font-weight: 200;
+        font-size: 11px;
+        
+    }
+    .content pre {
+        text-indent: -15px;
+        white-space: pre-wrap;
+    }
+    
+    #ww2, #ARPANET, #TIM, #NAVEGADORES, #WEB, #Tec, #duv {
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    #Enigma, #Bletchley, #dom, #hospedagem {
+        font-size: 20px;
+        margin-top: 1vh;
+        font-weight: 100;
+    }
+
+    .main2 p {
+        font-size: 11px;
+        font-weight: 150;
+        line-height: 20px;
+    }
+
+    footer a {
+        margin-left: -25px;
+        font-size: 11px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    } 
+    
 }
