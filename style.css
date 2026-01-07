@@ -248,6 +248,7 @@ footer a {
 }
 
 
+
 /* Tal como foi explicado no projeto, a responsividade do site é muito importante portanto em todos os documentos CSS é necessário adicionar algum código
 para lidar com vários tipos de ecrãs dos dispositivos móveis.
 Por norma só se usa a LARGURA (WIDTH) pois num dispositivo móvel a largura é que é diferente e a altura é sempre infinita (scroll) */
